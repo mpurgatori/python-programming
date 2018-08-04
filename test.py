@@ -4,4 +4,15 @@ def seven():
         if (i%7 == 0 and i%5 != 0):
             print (i)
 
-seven()
+def factorial(x):
+    if x == 1:
+        return 1
+    return x * factorial(x-1)
+
+def creatDictionary(x):
+    numbers = dict()
+    for i in range(1, x+1):
+        numbers[i] = i*i
+    return numbers
+
+print creatDictionary(8)
